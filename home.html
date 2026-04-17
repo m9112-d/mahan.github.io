@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="shab barfi, snowy nights, coffee, cafe, contact, drinks">
+    <meta name="description" content="Contact Snowy Nights café for orders, events, or inquiries.">
+    <meta name="subject" content="coffee shop, contact">
+    <meta name="url" content="https://www.shab-barfi.com">
+    <title>Menu | Snowy Nights Café</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="heder-small" id="hdj">
+        <div id="imgdiv">
+            <a href="logo.html"><img src="Photo/logo.webp" id="logo"></a>
+        </div>
+        <div id="menudiv">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="custom.html">Party</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+        <div id="title">Snowy Nights</div>
+    </div>
+    <div class="div-close" id="cl">
+        <div class="close"></div>
+    </div>
+    <div id="text-h0">At Snowy Nights Café, every moment is for sale – taste, smell, and smiles.</div>
+    <div id="text-h1">
+        <div id="text-h">
+            Welcome to Snowy Nights – your cozy corner for handcrafted coffee, warm conversations, and unforgettable
+            evenings.
+            Whether you're looking to place an order, book a private event, or just want to say hi – we're happy to hear
+            from you.
+        </div>
+    </div>
+    <div class="coffee2">
+        <div class="coffee" style="background-image: url(photo/Caramel-Iced-Coffee-6.jpg);"></div>
+        <div class="text">
+            Our signature Caramel Iced Coffee: perfectly chilled with a sweet caramel swirl that hits the spot every
+            time.
+        </div>
+    </div>
+
+    <div class="coffee2">
+        <div class="coffee" style="background-image: url(photo/Turmeric-Golden-Milk-Feautred.jpg);"></div>
+        <div class="text">
+            Turmeric Golden Milk – a warm, healing blend of turmeric, cinnamon, and creamy oat milk. Sunshine in a cup.
+        </div>
+    </div>
+
+    <div class="coffee2">
+        <div class="coffee" style="background-image: url(photo/Cinnamon-Tea-2.jpg);"></div>
+        <div class="text">
+            Spiced Cinnamon Tea – bold, fragrant, and perfectly cozy for a snowy night in.
+        </div>
+    </div>
+
+    <div class="coffee2">
+        <div class="coffee" style="background-image: url(photo/passion-fruit-iced-tea.webp);"></div>
+        <div class="text">
+            Passion Fruit Iced Tea – fruity, refreshing, and made to brighten your day with every sip.
+        </div>
+    </div>
+
+    <div class="coffee2">
+        <div class="coffee" style="background-image: url(photo/Hot-Chocolate-2.jpg);"></div>
+        <div class="text">
+            House Hot Chocolate – rich, velvety cocoa topped with whipped cream and love.
+        </div>
+    </div>
+
+    <div class="coffee2">
+        <div class="coffee" style="background-image: url(photo/late-m.jpg);"></div>
+        <div class="text">
+            Classic Latte – smooth espresso and steamed milk, blended to perfection.
+        </div>
+    </div>
+    <div id="text-h12">
+        <div id="text-h2">
+            At Snowy Nights Café, we believe that every cup of coffee starts a conversation. Whether you're looking to
+            organize a cozy private event, inquire about our seasonal specials, or simply want to share your thoughts
+            with us — we're always just one message away.
+            <br><br>
+            📧 Email: <a href="mailto:hello@snowynightscafe.com" class="ep">hello@snowynightscafe.com</a><br>
+            📞 Phone: <a href="tel:+31630936356" class="ep">+31 630 936 356</a>
+        </div>
+    </div>
+    <script>
+        var c = document.getElementById("cl");
+        var hd = document.getElementById("hdj");
+        var d = true;
+        var sh = document.getElementById("tbs");
+        var ri = document.getElementById("reservation-info")
+        hd.style.display = "flex";
+        c.addEventListener("click", function () {
+            if (d) {
+                hd.style.display = "none";
+                c.style.top = "0";
+                c.style.marginTop = "50px";
+                c.style.backgroundColor = "#6D4C41";
+                d = false;
+            } else {
+                hd.style.display = "flex";
+                c.style.top = "70px";
+                c.style.marginTop = "5px";
+                c.style.backgroundColor = "#F5E0C3";
+                d = true;
+            }
+        });
+        setTimeout(function () {
+            hd.style.display = "none";
+            c.style.top = "0";
+            c.style.marginTop = "50px";
+            c.style.backgroundColor = "#6D4C41";
+            d = false;
+        }, 3000);
+        console.log("test")
+    </script>
+</body>
+
+</html>

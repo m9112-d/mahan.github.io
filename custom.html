@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="shab barfi, snowy nights" />
+    <meta name="description" content="Snowy Nights Café Table Reservation" />
+    <meta name="subject" content="web-shop" />
+    <meta name="url" content="https://www.shab-barfi.com" />
+    <title>Table Reservation</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="heder-small" id="hdj">
+        <div id="imgdiv">
+            <a href="logo.html"><img src="Photo/logo.webp" id="logo"></a>
+        </div>
+        <div id="menudiv">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="custom.html">Party</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+        <div id="title">Snowy Nights</div>
+    </div>
+    <div class="div-close" id="cl">
+        <div class="close"></div>
+    </div>
+    <div id="reservation-info">
+        <h1> Reservation</h1><br>
+        At <strong>Snowy Nights Café</strong>, you can choose and reserve your preferred table online.
+        Select your date, time, and number of guests, then pick the
+        table that suits you best.
+    </div>
+    <h2 id="h2ct">Choose Your Table</h2>
+    <table id="tbh">
+        <tr>
+            <td>
+                <div class="table-box" data-num="1">Table 1</div>
+            </td>
+            <td>
+                <div class="table-box" data-num="2">Table 2</div>
+            </td>
+            <td>
+                <div class="table-box" data-num="3">Table 3</div>
+            </td>
+            <td>
+                <div class="table-box" data-num="4">Table 4</div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="table-box" data-num="5">Table 5</div>
+            </td>
+            <td>
+                <div class="table-box" data-num="6">Table 6</div>
+            </td>
+            <td>
+                <div class="table-box" data-num="7">Table 7</div>
+            </td>
+            <td>
+                <div class="table-box" data-num="8">Table 8</div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="table-box" data-num="9">Table 9</div>
+            </td>
+            <td>
+                <div class="table-box" data-num="10">Table 10</div>
+            </td>
+            <td>
+                <div class="table-box" data-num="11">Table 11</div>
+            </td>
+            <td>
+                <div class="table-box" id="tbs" data-num="12(VIP)">Table 12 (VIP)</div>
+            </td>
+        </tr>
+    </table>
+    <table id="home-p">
+        <tr>
+            <td><img class="t-img" src="photo/date.png" alt="Date" /></td>
+            <td><img class="t-img" src="photo/clock.png" alt="Time" /></td>
+            <td><img class="t-img" src="photo/person.jpg" alt="Guests" /></td>
+        </tr>
+        <tr>
+            <td><label class="text-l">Date</label></td>
+            <td><label class="text-l">Time</label></td>
+            <td><label class="text-l">Guests</label></td>
+        </tr>
+        <tr>
+            <td><input type="date" class="ip" /></td>
+            <td><input type="time" class="ip" /></td>
+            <td>
+                <select class="ip">
+                    <option>2 guests</option>
+                    <option>3 guests</option>
+                    <option>4 guests</option>
+                    <option>6 guests</option>
+                    <option>8 guests</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+    <button id="sending">Reserve Now</button>
+    <div id="reserve"></div>
+    <script>
+        document.getElementById("sending").addEventListener("click", function () {
+            if (!selectedTable) {
+                alert("Please select a table first.");
+            } else {
+                alert("Table " + selectedTable + " has been successfully reserved!");
+            }
+        });
+        setTimeout(function () {
+            hd.style.display = "none";
+            c.style.top = "0";
+            c.style.marginTop = "0";
+            c.style.backgroundColor = "#F5E0C3";
+            d = false;
+            sh.classList.add("shake");
+            setTimeout(() => {
+                sh.classList.remove("shake");
+                sh.style.backgroundColor = "bisque";
+                alert("VIP Table 12 has been unlocked for you.");
+                setTimeout(() => {
+                    ri.style.display = "none"
+                }, 3000);
+            }, 5000);
+        }, 3000);
+        console.log("test")
+    </script>
+</body>
+
+</html>
